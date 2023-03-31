@@ -1,7 +1,10 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'dart:collection';
+
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:location/location.dart';
 
 void main() => runApp(const MyApp());
 
@@ -28,11 +31,15 @@ class MyStatefulWidget extends StatefulWidget {
 
 class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   int _selectedIndex = 0;
+  var markers = HashSet<Marker>();
+
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static const List<Widget> _widgetOptions = <Widget>[
     GoogleMap(
-        initialCameraPosition: CameraPosition(target: LatLng(1000, 2000))),
+      initialCameraPosition:
+          CameraPosition(target: LatLng(36.706766, 4.045994), zoom: 10),
+    ),
     Text(
       'Index 1: questions',
       style: optionStyle,
@@ -81,7 +88,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
         backgroundColor: _appBarColor.value, // use ValueNotifier here
         // ignore: prefer_const_literals_to_create_immutables
         actions: [
-          Icon(Icons.local_hospital_outlined, color: Colors.white),
+          Icon(Icons.water_drop_sharp, color: Colors.white),
         ],
       ),
       body: Center(

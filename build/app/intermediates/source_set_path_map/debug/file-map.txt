@@ -15,3 +15,4 @@ com.example.pulse.app-mergeDebugResources-13 C:\Users\HP\Pulse\build\app\interme
 com.example.pulse.app-merged_res-14 C:\Users\HP\Pulse\build\app\intermediates\merged_res\debug
 com.example.pulse.app-packaged_res-15 C:\Users\HP\Pulse\build\flutter_plugin_android_lifecycle\intermediates\packaged_res\debug
 com.example.pulse.app-packaged_res-16 C:\Users\HP\Pulse\build\google_maps_flutter_android\intermediates\packaged_res\debug
+com.example.pulse.app-packaged_res-17 C:\Users\HP\Pulse\build\location\intermediates\packaged_res\debug

@@ -3,7 +3,7 @@
    <application
         android:label="pulse"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/launcher">
          <meta-data android:name="com.google.android.geo.API_KEY"
                android:value="AIzaSyBBS01P_zi4nRZkCm00b1Sf_dEZzalvung"/>
         <activity

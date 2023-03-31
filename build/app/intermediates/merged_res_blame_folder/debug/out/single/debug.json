@@ -1,5 +1,9 @@
 [
     {
+        "merged": "com.example.pulse.app-merged_res-14:/mipmap-hdpi_launcher.jpg.flat",
+        "source": "com.example.pulse.app-main-8:/mipmap-hdpi/launcher.jpg"
+    },
+    {
         "merged": "com.example.pulse.app-merged_res-14:/mipmap-mdpi_ic_launcher.png.flat",
         "source": "com.example.pulse.app-main-8:/mipmap-mdpi/ic_launcher.png"
     },
