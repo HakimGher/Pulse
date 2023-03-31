@@ -4,7 +4,7 @@ import 'dart:collection';
 
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:location/location.dart';
+import 'maps.dart';
 
 void main() => runApp(const MyApp());
 
@@ -35,13 +35,11 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
 
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
-  static const List<Widget> _widgetOptions = <Widget>[
-    GoogleMap(
-      initialCameraPosition:
-          CameraPosition(target: LatLng(36.706766, 4.045994), zoom: 10),
-    ),
+  // ignore: prefer_final_fields
+  static List<Widget> _widgetOptions = <Widget>[
+    Place(),
     Text(
-      'Index 1: questions',
+      'Index 1: rendez-vous',
       style: optionStyle,
     ),
     Text(
